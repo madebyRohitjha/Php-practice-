@@ -44,3 +44,80 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </body>
 </html>
+
+<?php
+$username = "rohit";
+$email = "rohit@gmail.com";
+$fullname = "Rohit Jha";
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Account</title>
+
+        <style>
+                body {
+                            font-family: Arial;
+                                        background-color: #f2f2f2;
+                                                }
+
+                                                        .account {
+                                                                    width: 350px;
+                                                                                margin: 50px auto;
+                                                                                            background: white;
+                                                                                                        padding: 20px;
+                                                                                                                    text-align: center;
+                                                                                                                                border-radius: 10px;
+                                                                                                                                        }
+
+                                                                                                                                                h2 {
+                                                                                                                                                            color: #333;
+                                                                                                                                                                    }
+
+                                                                                                                                                                            p {
+                                                                                                                                                                                        font-size: 16px;
+                                                                                                                                                                                                }
+
+                                                                                                                                                                                                        button {
+                                                                                                                                                                                                                    padding: 10px 20px;
+                                                                                                                                                                                                                                background-color: blue;
+                                                                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                                                                        border: none;
+                                                                                                                                                                                                                                                                    border-radius: 5px;
+                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                </style>
+                                                                                                                                                                                                                                                                                </head>
+
+                                                                                                                                                                                                                                                                                <body>
+
+                                                                                                                                                                                                                                                                                    <div class="account">
+
+                                                                                                                                                                                                                                                                                            <h2>My Account</h2>
+
+                                                                                                                                                                                                                                                                                                    <hr>
+
+                                                                                                                                                                                                                                                                                                            <p><b>Full Name:</b> <?php echo $fullname; ?></p>
+
+                                                                                                                                                                                                                                                                                                                    <p><b>Username:</b> <?php echo $username; ?></p>
+
+                                                                                                                                                                                                                                                                                                                            <p><b>Email:</b> <?php echo $email; ?></p>
+
+                                                                                                                                                                                                                                                                                                                                    <p><b>Account Status:</b> Active</p>
+
+                                                                                                                                                                                                                                                                                                                                            <br>
+
+                                                                                                                                                                                                                                                                                                                                                    <button onclick="alert('Edit Profile Clicked')">
+                                                                                                                                                                                                                                                                                                                                                                Edit Profile
+                                                                                                                                                                                                                                                                                                                                                                        </button>
+
+                                                                                                                                                                                                                                                                                                                                                                                <br><br>
+
+                                                                                                                                                                                                                                                                                                                                                                                        <button onclick="alert('Logout Clicked')">
+                                                                                                                                                                                                                                                                                                                                                                                                    Logout
+                                                                                                                                                                                                                                                                                                                                                                                                            </button>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                </html>
